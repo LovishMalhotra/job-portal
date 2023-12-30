@@ -1,11 +1,5 @@
-
 {
-    "version": 2,
-    "name": "jobPortal",
-    "builds": [
-       { "src": "index.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/index.js" }
-    ]
+   "version": 2,
+   "builds": [{ "src": "server/**", "use": "@vercel/node" }],
+   "routes": [{ "src": "/(.*)", "dest": "/server/index.js" }]
  }
