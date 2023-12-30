@@ -1,0 +1,95 @@
+body {
+  color: #05264e;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.main-banner {
+  background-image: url("https://jobbox-nextjs-v3.vercel.app/_next/static/media/img-about.0287ca62.png");
+  position: relative;
+  background-size: cover;
+}
+
+.section-box {
+  display: inline-block;
+  width: 100%;
+  /* overflow: visible; */
+}
+.main-banner-text {
+  z-index: 2;
+  color: #fff;
+  padding: 20px 0;
+}
+.main-banner p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main-banner h2 {
+  color: #fff;
+}
+
+.main-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: url("https://jobbox-nextjs-v3.vercel.app/_next/static/media/bg-black-trans.c550ad77.png")
+    repeat-x 0 100%;
+}
+
+.about-h5 {
+  color: #a0abb8;
+  font-weight: 700;
+}
+
+.about-p {
+  color: #4f5e64;
+  font-weight: 500;
+  font-size: 14px;
+  width: 50%;
+}
+
+.mainBody-p {
+  color: #4f5e64;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-grid-4 {
+  background-color: #fff;
+  padding: 40px 30px 35px;
+  border-radius: 10px;
+  border: thin solid #e0e6f7;
+}
+
+.card-grid-4 .img-grid {
+  height: 125px;
+  border-radius: 50%;
+  width: 125px;
+}
+.card-grid-info p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #66789c;
+}
+.card-grid-info-location {
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  color: #a0abb8;
+}
+
+.card-grid-info-location img {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .image-about-banner {
+    display: none;
+  }
+}
