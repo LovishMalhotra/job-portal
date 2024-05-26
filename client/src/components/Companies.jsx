@@ -15,12 +15,12 @@ const CompanyRegister = () => {
     companyName: "",
     location: "",
     jobTitle: "",
-    jobDescription: "",
+    description: "",
     experience: "",
     jobType: "",
     industry: "",
     salary: "",
-    skills: [],
+    jobSkills: [],
     email: "",
     password: "",
     confirmPassword: "",
@@ -34,7 +34,7 @@ const CompanyRegister = () => {
   };
 
   const handleSkillsChange = (tags) => {
-    setFormData((prevData) => ({ ...prevData, skills: tags }));
+    setFormData((prevData) => ({ ...prevData, jobSkills: tags }));
   };
 
   const handlePasswordChange = (e) => {
@@ -63,12 +63,12 @@ const CompanyRegister = () => {
       "companyName",
       "location",
       "jobTitle",
-      "jobDescription",
+      "description",
       "experience",
       "jobType",
       "industry",
       "salary",
-      "skills",
+      "jobSkills",
       "email",
       "password",
       "confirmPassword",
@@ -245,7 +245,8 @@ const CompanyRegister = () => {
                     <label className="form-label text-start">Job Skills*</label>
                     <TagsInput
                       className="form-control"
-                      value={formData.skills}
+                      value={formData.jobSkills}
+                      name="jobSkills"
                       onChange={handleSkillsChange}
                       inputProps={{
                         placeholder: "Enter skills",
@@ -260,8 +261,8 @@ const CompanyRegister = () => {
                     <textarea
                       className="form-control"
                       placeholder="Describe your job in detail..."
-                      name="jobDescription"
-                      value={formData.jobDescription}
+                      name="description"
+                      value={formData.description}
                       onChange={handleChange}
                     ></textarea>
                   </div>
