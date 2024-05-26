@@ -30,8 +30,12 @@ app.use("/search",searchRouters.router);
 
 //Database connection
 main().catch((err) => console.log(`Unable to connect ${err}`));
+
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/JobPortal");
+  await mongoose.connect("mongodb+srv://lovishmalhotra2441:Lovish%402441@cluster0.ipj4yj6.mongodb.net/jobPortal?retryWrites=true&w=majority",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
   console.log("Database Connected");
 }
 
