@@ -1,7 +1,7 @@
 {
   "name": "job",
   "version": "0.1.0",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://job-portal-6nyh.onrender.com/",
   "private": true,
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
